@@ -14,14 +14,16 @@
 | DEC-008 | Roles | Propietario decide; ChatGPT consulta/audita; Codex y Claude Code implementan y aportan arquitectura | Aprobada | Propietario | `README.md` de este directorio |
 | DEC-009 | SDI | Integración desde el inicio del proyecto | Intención aprobada; diseño pendiente | Propietario | `docs/arquitectura-y-referencias.md` |
 | DEC-010 | Agent-native | Diseño para agentes desde el inicio | Intención aprobada; contratos pendientes | Propietario | `docs/arquitectura-y-referencias.md` |
+| DEC-011 | Stack MVP | Astro 7 estático, Node 24 LTS, TS 6 compatible, Zod, Tailwind 4 para UI + CSS nativo editorial, sin islas, Vitest/Playwright/axe, GitHub Actions, Cloudflare Workers Static Assets sin SSR ni BD | Aprobada | Propietario, 2026-10-13 | [ADR-001 / Issue #2](https://github.com/Gunz-cop/ComentarioBiblico/issues/2) |
+| DEC-012 | Persistencia SDI | Usar el SDI externo oficial, ejecutado tras deploy; estado persistente en rama dedicada, con serialización y controles de integridad; detalles operativos en SDD | Aprobada en principio; detalles pendientes | Propietario, 2026-10-13 | [ADR-001 / Issue #2](https://github.com/Gunz-cop/ComentarioBiblico/issues/2), [SDI](https://github.com/Gunz-cop/SDI) |
 
 ## Propuestas abiertas
 
 | ID | Propuesta | Estado | Siguiente acción |
 |---|---|---|---|
-| PROP-001 | Tailwind CSS 4, CSS moderno y TypeScript estricto | Propuesta técnica | Validar compatibilidad y versionado estable en SDD |
+| PROP-001 | Tailwind CSS 4, CSS moderno y TypeScript estricto | Aprobada en DEC-011 | Concretar versiones y configuración en SDD |
 | PROP-002 | HTML sin JS como superficie primaria; JSON estructurado y posible MCP/WebMCP | Propuesta de diseño | Especificar contratos y pruebas agent-native |
-| PROP-003 | Integrar SDI tras despliegue confirmado | Propuesta de diseño | Definir disparadores y evitar notificar URLs inexistentes |
+| PROP-003 | Integrar SDI tras despliegue confirmado | Aprobada en DEC-012 | Diseñar recuperación, escritura y fallos de estado en SDD |
 | PROP-004 | UI editorial con modos de lectura y estudio | Propuesta de UX | Benchmark y prototipo antes de aprobar |
 
 ## Plantilla para nuevas decisiones
