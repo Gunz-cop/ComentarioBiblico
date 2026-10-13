@@ -1,26 +1,32 @@
 {
   "meta": {
-    "ejecucion": "2026-10-13T20:05:48.510Z",
+    "ejecucion": "2026-10-13T20:57:35.621Z",
     "playwright": "1.56.1",
     "axeCore": "4.10.3",
     "navegador": "chromium 141.0.7390.37",
     "ejecutable": "/opt/pw-browsers/chromium",
     "node": "v22.22.0"
   },
+  "pagina": "genesis-1-tarjetas.html",
+  "compacto": null,
   "capturas": [
-    "movil-320-light-plegado.png",
-    "movil-320-light-desplegado.png",
-    "movil-360-light-plegado.png",
-    "movil-360-light-desplegado.png",
-    "escritorio-1280-light-plegado.png",
-    "escritorio-1280-light-desplegado.png",
-    "movil-320-dark-plegado.png",
-    "movil-320-dark-desplegado.png",
-    "movil-360-dark-plegado.png",
-    "movil-360-dark-desplegado.png",
-    "escritorio-1280-dark-plegado.png",
-    "escritorio-1280-dark-desplegado.png",
-    "teclado-foco-360.png"
+    "genesis-1-tarjetas--movil-320-light-plegado.png",
+    "genesis-1-tarjetas--movil-320-light-desplegado.png",
+    "genesis-1-tarjetas--movil-360-light-plegado.png",
+    "genesis-1-tarjetas--movil-360-light-desplegado.png",
+    "genesis-1-tarjetas--tableta-768-light-plegado.png",
+    "genesis-1-tarjetas--tableta-768-light-desplegado.png",
+    "genesis-1-tarjetas--escritorio-1280-light-plegado.png",
+    "genesis-1-tarjetas--escritorio-1280-light-desplegado.png",
+    "genesis-1-tarjetas--movil-320-dark-plegado.png",
+    "genesis-1-tarjetas--movil-320-dark-desplegado.png",
+    "genesis-1-tarjetas--movil-360-dark-plegado.png",
+    "genesis-1-tarjetas--movil-360-dark-desplegado.png",
+    "genesis-1-tarjetas--tableta-768-dark-plegado.png",
+    "genesis-1-tarjetas--tableta-768-dark-desplegado.png",
+    "genesis-1-tarjetas--escritorio-1280-dark-plegado.png",
+    "genesis-1-tarjetas--escritorio-1280-dark-desplegado.png",
+    "genesis-1-tarjetas--teclado-foco-360.png"
   ],
   "reflow": [
     {
@@ -52,6 +58,20 @@
       "elementosQueDesbordan": []
     },
     {
+      "vista": "tableta-768",
+      "esquema": "light",
+      "estado": "plegado",
+      "desbordeHorizontalPx": 0,
+      "elementosQueDesbordan": []
+    },
+    {
+      "vista": "tableta-768",
+      "esquema": "light",
+      "estado": "desplegado",
+      "desbordeHorizontalPx": 0,
+      "elementosQueDesbordan": []
+    },
+    {
       "vista": "escritorio-1280",
       "esquema": "light",
       "estado": "plegado",
@@ -88,6 +108,20 @@
     },
     {
       "vista": "movil-360",
+      "esquema": "dark",
+      "estado": "desplegado",
+      "desbordeHorizontalPx": 0,
+      "elementosQueDesbordan": []
+    },
+    {
+      "vista": "tableta-768",
+      "esquema": "dark",
+      "estado": "plegado",
+      "desbordeHorizontalPx": 0,
+      "elementosQueDesbordan": []
+    },
+    {
+      "vista": "tableta-768",
       "esquema": "dark",
       "estado": "desplegado",
       "desbordeHorizontalPx": 0,
@@ -174,6 +208,7 @@
       "a: Antiguo Testamento",
       "a: Génesis",
       "a: Capítulo 1",
+      "a: Ver variante compacta",
       "a: Versículo 1",
       "summary: Hebreo e interlineal de 1:1",
       "summary: Comentario de 1:1 Borrador ilustrativo",
@@ -181,25 +216,24 @@
       "a: Versículo 3",
       "a: Versículo 4",
       "a: Versículo 5",
-      "div: CasoMuestraMarcas Dagesh + qametsבָּרָאU",
-      "a: 1:1 Hebreo y comentario",
-      "a: 1:3 «Sea la luz»"
+      "a: Versículo 11",
+      "summary: Hebreo e interlineal de 1:11"
     ],
     "abiertoTrasEnter": true,
     "focoTrasAbrir": "summary: Hebreo e interlineal de 1:1",
     "cerradoTrasSegundoEnter": true,
     "focoVisible": true
   },
-  "arbolAccesibleInterlineal": "- list \"Interlineal palabra por palabra, en el orden del texto hebreo\":\n  - listitem:\n    - term: Palabra\n    - definition: \"1\"\n    - term: Hebreo\n    - definition: בְּרֵאשִׁית\n    - term: Transliteración\n    - definition: bərēʾšît\n    - term: Glosa\n    - definition: en (el) principio\n    - group:\n      - text: Análisis de la palabra 1 Preposición + sustantivo femenino singular Editorial Lema רֵאשִׁית ·\n      - code: HR/Ncfsa\n      - text: Importado\n  - listitem:\n    - term: Palabra\n    - definition: \"2\"\n    - term: Hebreo\n    - definition: בָּרָא\n    - term: Transliteración\n    - definition: bārāʾ\n    - term: Glosa\n    - definition: creó\n    - group:\n      - text: Análisis de la palabra 2 Verbo Qal perfecto, 3.ª m. sg. Editorial Lema ברא ·\n      - code: HVqp3ms\n      - text: Importado\n  - listitem:\n    - term: Palabra\n    - definition: \"3\"",
+  "arbolAccesibleInterlineal": "- list \"Interlineal de 1:1, 7 palabras en el orden del texto hebreo\":\n  - listitem:\n    - term: Palabra\n    - definition: \"1\"\n    - term: Hebreo\n    - definition: בְּרֵאשִׁית\n    - term: Transliteración\n    - definition: bərēʾšît\n    - term: Glosa\n    - definition: en (el) principio\n    - group:\n      - text: Análisis de la palabra 1 preposición + sustantivo femenino singular, absoluto Derivado Segmentos בְּ + רֵאשִׁית\n      - code: HR/Ncfsa\n      - text: · H7225 Importado\n  - listitem:\n    - term: Palabra\n    - definition: \"2\"\n    - term: Hebreo\n    - definition: בָּרָא\n    - term: Transliteración\n    - definition: bārāʾ\n    - term: Glosa\n    - definition: creó\n    - group:\n      - text: Análisis de la palabra 2 verbo Qal, perfecto, 3.ª masculino singular Derivado Segmentos בָּרָא\n      - code: HVqp3ms\n      - text: · H1254a Importado\n  - listitem:\n    - term: Palabra\n    - definition: \"3\"",
   "pesoPrimeraVisita": {
     "recursos": [
       {
-        "url": "genesis-1.html",
-        "bytes": 13131
+        "url": "estilos.css",
+        "bytes": 13685
       },
       {
-        "url": "estilos.css",
-        "bytes": 11271
+        "url": "genesis-1-tarjetas.html",
+        "bytes": 29351
       },
       {
         "url": "SILEOT.ttf",
@@ -214,7 +248,7 @@
         "bytes": 252852
       }
     ],
-    "totalBytes": 674230,
-    "sinFuentesBytes": 24402
+    "totalBytes": 692864,
+    "sinFuentesBytes": 43036
   }
 }

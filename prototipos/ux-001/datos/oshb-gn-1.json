@@ -1,0 +1,176 @@
+{
+ "fuente": "OSHB morphhb wlc/Gen.xml",
+ "versos": {
+  "Gen.1.1": [
+   {
+    "id": "01xeN",
+    "texto": "בְּ/רֵאשִׁ֖ית",
+    "lema": "b/7225",
+    "morf": "HR/Ncfsa"
+   },
+   {
+    "id": "01Nvk",
+    "texto": "בָּרָ֣א",
+    "lema": "1254 a",
+    "morf": "HVqp3ms"
+   },
+   {
+    "id": "01TyA",
+    "texto": "אֱלֹהִ֑ים",
+    "lema": "430",
+    "morf": "HNcmpa"
+   },
+   {
+    "id": "01vuQ",
+    "texto": "אֵ֥ת",
+    "lema": "853",
+    "morf": "HTo"
+   },
+   {
+    "id": "01TSc",
+    "texto": "הַ/שָּׁמַ֖יִם",
+    "lema": "d/8064",
+    "morf": "HTd/Ncmpa"
+   },
+   {
+    "id": "01k5P",
+    "texto": "וְ/אֵ֥ת",
+    "lema": "c/853",
+    "morf": "HC/To"
+   },
+   {
+    "id": "01nPh",
+    "texto": "הָ/אָֽרֶץ",
+    "lema": "d/776",
+    "morf": "HTd/Ncbsa",
+    "sigue": "sof_pasuq"
+   }
+  ],
+  "Gen.1.11": [
+   {
+    "id": "01cpb",
+    "texto": "וַ/יֹּ֣אמֶר",
+    "lema": "c/559",
+    "morf": "HC/Vqw3ms"
+   },
+   {
+    "id": "01zio",
+    "texto": "אֱלֹהִ֗ים",
+    "lema": "430",
+    "morf": "HNcmpa"
+   },
+   {
+    "id": "01Qsh",
+    "texto": "תַּֽדְשֵׁ֤א",
+    "lema": "1876",
+    "morf": "HVhj3fs"
+   },
+   {
+    "id": "01zTj",
+    "texto": "הָ/אָ֨רֶץ֙",
+    "lema": "d/776",
+    "morf": "HTd/Ncbsa"
+   },
+   {
+    "id": "01fPi",
+    "texto": "דֶּ֔שֶׁא",
+    "lema": "1877",
+    "morf": "HNcmsa"
+   },
+   {
+    "id": "01GYe",
+    "texto": "עֵ֚שֶׂב",
+    "lema": "6212",
+    "morf": "HNcmsa"
+   },
+   {
+    "id": "01Bbz",
+    "texto": "מַזְרִ֣יעַ",
+    "lema": "2232",
+    "morf": "HVhrmsa"
+   },
+   {
+    "id": "01VA9",
+    "texto": "זֶ֔רַע",
+    "lema": "2233",
+    "morf": "HNcmsa"
+   },
+   {
+    "id": "01fV3",
+    "texto": "עֵ֣ץ",
+    "lema": "6086",
+    "morf": "HNcmsc"
+   },
+   {
+    "id": "01Sov",
+    "texto": "פְּרִ֞י",
+    "lema": "6529",
+    "morf": "HNcmsa"
+   },
+   {
+    "id": "01V27",
+    "texto": "עֹ֤שֶׂה",
+    "lema": "6213 a",
+    "morf": "HVqrmsa"
+   },
+   {
+    "id": "01ifp",
+    "texto": "פְּרִי֙",
+    "lema": "6529",
+    "morf": "HNcmsa"
+   },
+   {
+    "id": "017ZG",
+    "texto": "לְ/מִינ֔/וֹ",
+    "lema": "l/4327",
+    "morf": "HR/Ncmsc/Sp3ms"
+   },
+   {
+    "id": "01B2d",
+    "texto": "אֲשֶׁ֥ר",
+    "lema": "834 a",
+    "morf": "HTr"
+   },
+   {
+    "id": "01ewe",
+    "texto": "זַרְע/וֹ",
+    "lema": "2233",
+    "morf": "HNcmsc/Sp3ms",
+    "sigue": "maqaf"
+   },
+   {
+    "id": "01SV6",
+    "texto": "ב֖/וֹ",
+    "lema": "b",
+    "morf": "HR/Sp3ms"
+   },
+   {
+    "id": "01G83",
+    "texto": "עַל",
+    "lema": "5921 a",
+    "morf": "HR",
+    "sigue": "maqaf"
+   },
+   {
+    "id": "01vzS",
+    "texto": "הָ/אָ֑רֶץ",
+    "lema": "d/776",
+    "morf": "HTd/Ncbsa"
+   },
+   {
+    "id": "01Gq9",
+    "texto": "וַֽ/יְהִי",
+    "lema": "c/1961",
+    "morf": "HC/Vqw3ms",
+    "sigue": "maqaf"
+   },
+   {
+    "id": "013y8",
+    "texto": "כֵֽן",
+    "lema": "3651 c",
+    "morf": "HD",
+    "sigue": "sof_pasuq"
+   }
+  ]
+ }
+}

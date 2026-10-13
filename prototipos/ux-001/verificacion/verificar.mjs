@@ -24,7 +24,9 @@ const srv = http.createServer((req, res) => {
   res.writeHead(200, { 'content-type': types[path.extname(f)] || 'application/octet-stream' });
   fs.createReadStream(f).pipe(res);
 }).listen(0);
-const url = `http://127.0.0.1:${srv.address().port}/genesis-1.html`;
+const PAGINA = process.argv[2] || 'genesis-1.html';
+const PREFIJO = PAGINA.replace(/\.html$/, '');
+const url = `http://127.0.0.1:${srv.address().port}/${PAGINA}`;
 
 const launch = process.env.PW_CHROMIUM_PATH ? { executablePath: process.env.PW_CHROMIUM_PATH } : {};
 const browser = await chromium.launch(launch);
@@ -39,7 +41,7 @@ const meta = {
 };
 const capturas = [];
 const shot = async (page, name, opts = {}) => {
-  const file = `${name}.png`;
+  const file = `${PREFIJO}--${name}.png`;
   await page.screenshot({ path: path.join(out, file), fullPage: true, ...opts });
   capturas.push(file);
 };
@@ -51,7 +53,7 @@ const abrirTodos = async page => {
 };
 const listo = async page => { await page.evaluate(() => document.fonts.ready); await page.waitForTimeout(200); };
 
-const VISTAS = [['movil-320', 320, 720], ['movil-360', 360, 780], ['escritorio-1280', 1280, 900]];
+const VISTAS = [['movil-320', 320, 720], ['movil-360', 360, 780], ['tableta-768', 768, 1024], ['escritorio-1280', 1280, 900]];
 const ESQUEMAS = ['light', 'dark'];
 
 // 1. Capturas: JS de la página DESACTIVADO (demuestra que no depende de JS).
@@ -114,7 +116,7 @@ const teclado = {};
   const det = page.locator('details.estudio').first();
   await page.keyboard.press('Enter');
   teclado.abiertoTrasEnter = (await det.getAttribute('open')) !== null;
-  await page.screenshot({ path: path.join(out, 'teclado-foco-360.png') }); capturas.push('teclado-foco-360.png');
+  await shot(page, 'teclado-foco-360', { fullPage: false });
   teclado.focoTrasAbrir = await activo();
   await page.keyboard.press('Enter');
   teclado.cerradoTrasSegundoEnter = (await det.getAttribute('open')) === null;
@@ -128,7 +130,7 @@ let arbol;
   const ctx = await browser.newContext({ viewport: { width: 360, height: 780 } });
   const page = await ctx.newPage();
   await page.goto(url); await abrirTodos(page);
-  arbol = (await page.locator('ol.interlineal').ariaSnapshot()).split('\n').slice(0, 30).join('\n');
+  arbol = (await page.locator('ol.interlineal, ol.compacto').first().ariaSnapshot()).split('\n').slice(0, 30).join('\n');
   await ctx.close();
 }
 
@@ -145,10 +147,27 @@ let peso;
   await ctx.close();
 }
 
+// 7. Interlineal compacto: enlace palabra → fila de análisis con JS de página DESACTIVADO
+let compacto = null;
+{
+  const ctx = await browser.newContext({ viewport: { width: 360, height: 780 }, javaScriptEnabled: false, deviceScaleFactor: 2 });
+  const page = await ctx.newPage();
+  await page.goto(url);
+  if (await page.locator('.compacto').count()) {
+    await page.locator('details.estudio').nth(2).locator('> summary').click(); // 1:11
+    const enlaces = await page.locator('details.estudio').nth(2).locator('a.palabra').count();
+    await page.locator('#p-1\\:11-3 a').click();
+    await page.waitForTimeout(300);
+    const abiertoSinJs = (await page.locator('[id="analisis-1:11"]').getAttribute('open')) !== null;
+    await shot(page, 'compacto-1-11-analisis-sin-js', { fullPage: false });
+    compacto = { enlacesPalabra_1_11: enlaces, analisisSeAbreAlSeguirEnlaceSinJs: abiertoSinJs, url: page.url().replace(/^.*#/, '#') };
+  }
+  await ctx.close();
+}
 await browser.close(); srv.close();
-const informe = { meta, capturas, reflow, auditoria, teclado, arbolAccesibleInterlineal: arbol, pesoPrimeraVisita: peso };
-fs.writeFileSync(path.join(out, 'informe.json'), JSON.stringify(informe, null, 2));
+const informe = { meta, pagina: PAGINA, compacto, capturas, reflow, auditoria, teclado, arbolAccesibleInterlineal: arbol, pesoPrimeraVisita: peso };
+fs.writeFileSync(path.join(out, `informe-${PREFIJO}.json`), JSON.stringify(informe, null, 2));
 const maxDesborde = Math.max(...reflow.map(r => r.desbordeHorizontalPx));
 const violaciones = auditoria.reduce((s, a) => s + a.axeViolaciones.length, 0);
-console.log(JSON.stringify({ meta, maxDesborde, violaciones, teclado, peso: { total: peso.totalBytes, sinFuentes: peso.sinFuentesBytes } }, null, 2));
+console.log(JSON.stringify({ pagina: PAGINA, compacto, meta, maxDesborde, violaciones, teclado, peso: { total: peso.totalBytes, sinFuentes: peso.sinFuentesBytes } }, null, 2));
 process.exitCode = maxDesborde > 0 || violaciones > 0 ? 1 : 0;

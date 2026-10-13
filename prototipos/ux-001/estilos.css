@@ -53,16 +53,18 @@
   --radius: 4px;
   --target: 44px;
 }
+/* Oscuro «Carbón suave» (preferencia provisional del propietario). Contrastes sobre #181A1D / #212429:
+   texto 13.81/12.33 · atenuado 7.71/6.88 · acento 8.16/7.28 · enlace 8.99/8.02 · editorial 8.58/7.66 · borde 3.59/3.20 */
 @media (prefers-color-scheme: dark) {
   :root {
-    --color-bg: #171513;
-    --color-surface: #221F1B;
-    --color-text: #E8E2D6;
-    --color-text-muted: #A9A08F;
-    --color-accent: #E39A7F;
+    --color-bg: #181A1D;
+    --color-surface: #212429;
+    --color-text: #E3E5E7;
+    --color-text-muted: #A7ADB4;
+    --color-accent: #E8A08A;
     --color-link: #8EC1DD;
-    --color-editorial: #B9A8E0;
-    --color-border: #6E6555;
+    --color-editorial: #BCAEE6;
+    --color-border: #6B727C;
     --color-focus: #8EC1DD;
   }
 }
@@ -89,8 +91,8 @@ a { color: var(--color-link); text-underline-offset: .18em; }
 .oculto { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
 
 /* Hebreo: siempre aislado (bidi) y con interlineado amplio para niqud */
-:lang(he) { font-family: var(--font-hebrew); font-size: var(--size-hebrew); line-height: var(--leading-hebrew); unicode-bidi: isolate; }
-p :lang(he), li :lang(he) { font-size: 1.25em; line-height: 1; }
+:lang(he):not(:lang(he-Latn)) { font-family: var(--font-hebrew); font-size: var(--size-hebrew); line-height: var(--leading-hebrew); unicode-bidi: isolate; }
+p :lang(he):not(:lang(he-Latn)), li :lang(he):not(:lang(he-Latn)) { font-size: 1.25em; line-height: 1; }
 :lang(he-Latn) { font-style: italic; }
 
 /* ---------- Cabecera y navegación ---------- */
@@ -139,6 +141,7 @@ details[open] > summary::before { transform: rotate(90deg); }
 .etiqueta { font-family: var(--font-ui); font-size: .75rem; font-weight: 600; letter-spacing: .03em; padding: 0 .4em; border-radius: var(--radius); white-space: nowrap; }
 .etiqueta.importado { border: 1px solid var(--color-text-muted); color: var(--color-text-muted); }
 .etiqueta.editorial { border: 1px dashed var(--color-editorial); color: var(--color-editorial); }
+.etiqueta.derivado { border: 3px double var(--color-text-muted); color: var(--color-text-muted); }
 .afirmacion { font-family: var(--font-ui); font-size: var(--size-small); color: var(--color-text-muted); }
 
 /* ---------- Interlineal ---------- */
@@ -157,7 +160,7 @@ details[open] > summary::before { transform: rotate(90deg); }
 .token dl { margin: 0; display: grid; gap: 0; }
 .token dt { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
 .token dd { margin: 0; }
-.token .t-heb { font-size: var(--size-hebrew); }
+.interlineal .token .t-heb { font-size: var(--size-hebrew); line-height: 1.7; }
 .token .t-tr { color: var(--color-text-muted); font-size: .95em; }
 .token .t-gl { font-weight: 600; font-size: .95em; }
 .token .t-gl.funcion { font-weight: 400; font-style: italic; }
@@ -197,3 +200,29 @@ footer { font-family: var(--font-ui); font-size: var(--size-small); color: var(-
 }
 .lateral h2 { font-size: 1rem; margin-top: 0; }
 .lateral ul { padding-inline-start: 1.1em; }
+
+/* ---------- Interlineal compacto (variante propuesta) ----------
+   Hebreo, transliteración y glosa visibles; análisis bajo demanda en una tabla enlazada. */
+.compacto { list-style: none; margin: var(--space-4) 0 var(--space-2); padding: 0; display: flex; flex-wrap: wrap; gap: var(--space-1) var(--space-2); }
+.compacto li { display: flex; }
+.palabra {
+  display: inline-flex; flex-direction: column; align-items: center; text-align: center;
+  min-width: 44px; min-height: 44px; padding: var(--space-1) var(--space-2);
+  color: var(--color-text); text-decoration: none; border-radius: var(--radius);
+  border-bottom: 1px dotted var(--color-border);
+}
+.palabra:hover { background: var(--color-surface); }
+.compacto .c-heb { font-size: var(--size-hebrew); line-height: 1.6; }
+.c-tr { font-size: .8rem; color: var(--color-text-muted); font-family: var(--font-ui); font-style: normal; line-height: 1.3; }
+.c-gl { font-size: .85rem; font-family: var(--font-ui); line-height: 1.3; max-width: 9em; }
+.c-gl .funcion, .t-gl .funcion { font-style: italic; color: var(--color-text-muted); }
+.compacto li:target .palabra, .tabla-analisis tr:target { background: color-mix(in srgb, var(--color-link) 18%, transparent); outline: 2px solid var(--color-link); }
+.analisis { margin: var(--space-2) 0 var(--space-4); }
+.tabla-analisis { width: 100%; border-collapse: collapse; font-family: var(--font-ui); font-size: .85rem; }
+.tabla-analisis th, .tabla-analisis td { border-bottom: 1px solid var(--color-border); padding: var(--space-2); text-align: start; vertical-align: top; }
+.tabla-analisis td :lang(he):not(:lang(he-Latn)) { font-size: 1.35rem; line-height: 1.6; }
+.tabla-analisis th a { display: inline-flex; min-width: 24px; min-height: 24px; align-items: center; justify-content: center; }
+.aviso p { margin: 0 0 var(--space-2); }
+.aviso p:last-child { margin-bottom: 0; }
+.aviso a { display: inline-block; min-height: 24px; }
+.morf-cod { color: var(--color-text-muted); font-size: .8rem; }

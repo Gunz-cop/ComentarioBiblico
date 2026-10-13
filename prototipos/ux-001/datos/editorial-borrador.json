@@ -1,0 +1,34 @@
+{
+  "_aviso": "BORRADOR EDITORIAL SIN REVISAR, redactado por Claude Code para el prototipo UX-001. Transliteración: estilo SBL académico aproximado, sin generador ni reglas cerradas (PEND-02). Glosas: propuesta de trabajo, no aprobada (DEC-007). Gn 1:1 reproduce el anexo A de docs/requisitos.md. Los ids corresponden a OSHB.",
+  "Gen.1.1": {
+    "01xeN": ["bərēʾšît", "en (el) principio"],
+    "01Nvk": ["bārāʾ", "creó"],
+    "01TyA": ["ʾĕlōhîm", "Dios"],
+    "01vuQ": ["ʾēt", "", "marca de objeto directo"],
+    "01TSc": ["haššāmayim", "los cielos"],
+    "01k5P": ["wəʾēt", "y", "marca de objeto directo"],
+    "01nPh": ["hāʾāreṣ", "la tierra"]
+  },
+  "Gen.1.11": {
+    "01cpb": ["wayyōʾmer", "y dijo"],
+    "01zio": ["ʾĕlōhîm", "Dios"],
+    "01Qsh": ["tadšēʾ", "produzca"],
+    "01zTj": ["hāʾāreṣ", "la tierra"],
+    "01fPi": ["dešeʾ", "vegetación"],
+    "01GYe": ["ʿēśeb", "hierba"],
+    "01Bbz": ["mazrîaʿ", "que da semilla"],
+    "01VA9": ["zeraʿ", "semilla"],
+    "01fV3": ["ʿēṣ", "árbol de"],
+    "01Sov": ["pərî", "fruto"],
+    "01V27": ["ʿōśeh", "que hace"],
+    "01ifp": ["pərî", "fruto"],
+    "017ZG": ["ləmînô", "según su especie"],
+    "01B2d": ["ʾăšer", "que", "relativo"],
+    "01ewe": ["zarʿô", "su semilla"],
+    "01SV6": ["bô", "en él"],
+    "01G83": ["ʿal", "sobre"],
+    "01vzS": ["hāʾāreṣ", "la tierra"],
+    "01Gq9": ["wayhî", "y fue"],
+    "013y8": ["kēn", "así"]
+  }
+}

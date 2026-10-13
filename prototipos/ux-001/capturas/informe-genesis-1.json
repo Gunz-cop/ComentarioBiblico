@@ -1,0 +1,259 @@
+{
+  "meta": {
+    "ejecucion": "2026-10-13T20:56:43.420Z",
+    "playwright": "1.56.1",
+    "axeCore": "4.10.3",
+    "navegador": "chromium 141.0.7390.37",
+    "ejecutable": "/opt/pw-browsers/chromium",
+    "node": "v22.22.0"
+  },
+  "pagina": "genesis-1.html",
+  "compacto": {
+    "enlacesPalabra_1_11": 20,
+    "analisisSeAbreAlSeguirEnlaceSinJs": true,
+    "url": "#a-1:11-3"
+  },
+  "capturas": [
+    "genesis-1--movil-320-light-plegado.png",
+    "genesis-1--movil-320-light-desplegado.png",
+    "genesis-1--movil-360-light-plegado.png",
+    "genesis-1--movil-360-light-desplegado.png",
+    "genesis-1--tableta-768-light-plegado.png",
+    "genesis-1--tableta-768-light-desplegado.png",
+    "genesis-1--escritorio-1280-light-plegado.png",
+    "genesis-1--escritorio-1280-light-desplegado.png",
+    "genesis-1--movil-320-dark-plegado.png",
+    "genesis-1--movil-320-dark-desplegado.png",
+    "genesis-1--movil-360-dark-plegado.png",
+    "genesis-1--movil-360-dark-desplegado.png",
+    "genesis-1--tableta-768-dark-plegado.png",
+    "genesis-1--tableta-768-dark-desplegado.png",
+    "genesis-1--escritorio-1280-dark-plegado.png",
+    "genesis-1--escritorio-1280-dark-desplegado.png",
+    "genesis-1--teclado-foco-360.png",
+    "genesis-1--compacto-1-11-analisis-sin-js.png"
+  ],
+  "reflow": [
+    {
+      "vista": "movil-320",
+      "esquema": "light",
+      "estado": "plegado",
+      "desbordeHorizontalPx": 0,
+      "elementosQueDesbordan": []
+    },
+    {
+      "vista": "movil-320",
+      "esquema": "light",
+      "estado": "desplegado",
+      "desbordeHorizontalPx": 0,
+      "elementosQueDesbordan": []
+    },
+    {
+      "vista": "movil-360",
+      "esquema": "light",
+      "estado": "plegado",
+      "desbordeHorizontalPx": 0,
+      "elementosQueDesbordan": []
+    },
+    {
+      "vista": "movil-360",
+      "esquema": "light",
+      "estado": "desplegado",
+      "desbordeHorizontalPx": 0,
+      "elementosQueDesbordan": []
+    },
+    {
+      "vista": "tableta-768",
+      "esquema": "light",
+      "estado": "plegado",
+      "desbordeHorizontalPx": 0,
+      "elementosQueDesbordan": []
+    },
+    {
+      "vista": "tableta-768",
+      "esquema": "light",
+      "estado": "desplegado",
+      "desbordeHorizontalPx": 0,
+      "elementosQueDesbordan": []
+    },
+    {
+      "vista": "escritorio-1280",
+      "esquema": "light",
+      "estado": "plegado",
+      "desbordeHorizontalPx": 0,
+      "elementosQueDesbordan": []
+    },
+    {
+      "vista": "escritorio-1280",
+      "esquema": "light",
+      "estado": "desplegado",
+      "desbordeHorizontalPx": 0,
+      "elementosQueDesbordan": []
+    },
+    {
+      "vista": "movil-320",
+      "esquema": "dark",
+      "estado": "plegado",
+      "desbordeHorizontalPx": 0,
+      "elementosQueDesbordan": []
+    },
+    {
+      "vista": "movil-320",
+      "esquema": "dark",
+      "estado": "desplegado",
+      "desbordeHorizontalPx": 0,
+      "elementosQueDesbordan": []
+    },
+    {
+      "vista": "movil-360",
+      "esquema": "dark",
+      "estado": "plegado",
+      "desbordeHorizontalPx": 0,
+      "elementosQueDesbordan": []
+    },
+    {
+      "vista": "movil-360",
+      "esquema": "dark",
+      "estado": "desplegado",
+      "desbordeHorizontalPx": 0,
+      "elementosQueDesbordan": []
+    },
+    {
+      "vista": "tableta-768",
+      "esquema": "dark",
+      "estado": "plegado",
+      "desbordeHorizontalPx": 0,
+      "elementosQueDesbordan": []
+    },
+    {
+      "vista": "tableta-768",
+      "esquema": "dark",
+      "estado": "desplegado",
+      "desbordeHorizontalPx": 0,
+      "elementosQueDesbordan": []
+    },
+    {
+      "vista": "escritorio-1280",
+      "esquema": "dark",
+      "estado": "plegado",
+      "desbordeHorizontalPx": 0,
+      "elementosQueDesbordan": []
+    },
+    {
+      "vista": "escritorio-1280",
+      "esquema": "dark",
+      "estado": "desplegado",
+      "desbordeHorizontalPx": 0,
+      "elementosQueDesbordan": []
+    }
+  ],
+  "auditoria": [
+    {
+      "esquema": "light",
+      "estado": "plegado",
+      "axeViolaciones": [],
+      "axeIncompletas": [],
+      "axeAprobadas": 25,
+      "objetivosMenoresDe24px": [],
+      "fuentes": [
+        "Source Serif 4 normal 400: loaded",
+        "Source Serif 4 italic 400: loaded",
+        "Source Serif 4 normal 600: loaded",
+        "Ezra SIL normal normal: loaded"
+      ]
+    },
+    {
+      "esquema": "light",
+      "estado": "desplegado",
+      "axeViolaciones": [],
+      "axeIncompletas": [],
+      "axeAprobadas": 25,
+      "objetivosMenoresDe24px": [],
+      "fuentes": [
+        "Source Serif 4 normal 400: loaded",
+        "Source Serif 4 italic 400: loaded",
+        "Source Serif 4 normal 600: loaded",
+        "Ezra SIL normal normal: loaded"
+      ]
+    },
+    {
+      "esquema": "dark",
+      "estado": "plegado",
+      "axeViolaciones": [],
+      "axeIncompletas": [],
+      "axeAprobadas": 25,
+      "objetivosMenoresDe24px": [],
+      "fuentes": [
+        "Source Serif 4 normal 400: loaded",
+        "Source Serif 4 italic 400: loaded",
+        "Source Serif 4 normal 600: loaded",
+        "Ezra SIL normal normal: loaded"
+      ]
+    },
+    {
+      "esquema": "dark",
+      "estado": "desplegado",
+      "axeViolaciones": [],
+      "axeIncompletas": [],
+      "axeAprobadas": 25,
+      "objetivosMenoresDe24px": [],
+      "fuentes": [
+        "Source Serif 4 normal 400: loaded",
+        "Source Serif 4 italic 400: loaded",
+        "Source Serif 4 normal 600: loaded",
+        "Ezra SIL normal normal: loaded"
+      ]
+    }
+  ],
+  "teclado": {
+    "ordenFoco": [
+      "a: Saltar al contenido",
+      "a: Comentario Bíblico (nombre provisional, ",
+      "a: Inicio",
+      "a: Antiguo Testamento",
+      "a: Génesis",
+      "a: Capítulo 1",
+      "a: Ver variante en tarjetas",
+      "a: Versículo 1",
+      "summary: Hebreo e interlineal de 1:1",
+      "summary: Comentario de 1:1 Borrador ilustrativo",
+      "a: Versículo 2",
+      "a: Versículo 3",
+      "a: Versículo 4",
+      "a: Versículo 5",
+      "a: Versículo 11",
+      "summary: Hebreo e interlineal de 1:11"
+    ],
+    "abiertoTrasEnter": true,
+    "focoTrasAbrir": "summary: Hebreo e interlineal de 1:1",
+    "cerradoTrasSegundoEnter": true,
+    "focoVisible": true
+  },
+  "arbolAccesibleInterlineal": "- list \"Interlineal compacto de 1:1, 7 palabras en el orden del texto hebreo\":\n  - listitem:\n    - 'link \"Palabra 1: בְּרֵאשִׁית bərēʾšît en (el) principio\"':\n      - /url: \"#a-1:1-1\"\n  - listitem:\n    - 'link \"Palabra 2: בָּרָא bārāʾ creó\"':\n      - /url: \"#a-1:1-2\"\n  - listitem:\n    - 'link \"Palabra 3: אֱלֹהִים ʾĕlōhîm Dios\"':\n      - /url: \"#a-1:1-3\"\n  - listitem:\n    - 'link \"Palabra 4: אֵת ʾēt marca de objeto directo\"':\n      - /url: \"#a-1:1-4\"\n  - listitem:\n    - 'link \"Palabra 5: הַשָּׁמַיִם haššāmayim los cielos\"':\n      - /url: \"#a-1:1-5\"\n  - listitem:\n    - 'link \"Palabra 6: וְאֵת wəʾēt y (marca de objeto directo)\"':\n      - /url: \"#a-1:1-6\"\n  - listitem:\n    - 'link \"Palabra 7: הָאָֽרֶץ׃ hāʾāreṣ la tierra\"':\n      - /url: \"#a-1:1-7\"",
+  "pesoPrimeraVisita": {
+    "recursos": [
+      {
+        "url": "estilos.css",
+        "bytes": 13685
+      },
+      {
+        "url": "genesis-1.html",
+        "bytes": 27219
+      },
+      {
+        "url": "SILEOT.ttf",
+        "bytes": 155584
+      },
+      {
+        "url": "SourceSerif4-Semibold.otf",
+        "bytes": 252852
+      },
+      {
+        "url": "SourceSerif4-Regular.otf",
+        "bytes": 241392
+      }
+    ],
+    "totalBytes": 690732,
+    "sinFuentesBytes": 40904
+  }
+}

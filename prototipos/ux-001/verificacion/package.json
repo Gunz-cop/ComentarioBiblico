@@ -5,7 +5,7 @@
   "description": "Arnés de verificación del prototipo UX-001 (no es dependencia del sitio).",
   "scripts": {
     "navegador": "playwright install chromium",
-    "verificar": "node verificar.mjs"
+    "verificar": "node verificar.mjs genesis-1.html && node verificar.mjs genesis-1-tarjetas.html"
   },
   "devDependencies": {
     "@axe-core/playwright": "4.10.2",
