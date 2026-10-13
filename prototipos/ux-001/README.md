@@ -5,6 +5,7 @@
 - Estado: **prototipo aislado, provisional y reversible.** No es código de producción, no se integra en Astro y no amplía el MVP.
 - Iteración 2 (comentario 6154852749 en el PR #12): modo oscuro «Carbón suave», interlineal compacto y prueba de estrés con Gn 1:11 completo.
 - Vista navegable para teléfono o tableta: artefacto privado en claude.ai (copia de estos ficheros, con el CSS en línea), enlazado en el PR.
+- Valoración del propietario tras probarlo en su iPhone (2026-10-13): «Aceptable». Es una validación visual provisional, no la aprobación final del diseño.
 - Autor: Claude Code · 2026-10-13
 
 ## Contenido
@@ -101,7 +102,7 @@ En este entorno no se permite descargar navegadores. Por eso la ejecución regis
 | UX-CA-04 Foco y teclado | `Enter` abre y cierra; el foco queda en el `summary`, con contorno visible | igual | `teclado`, `*--teclado-foco-360.png` |
 | Enlace palabra → análisis sin JS | **Funciona en Chromium**: 20 enlaces en 1:11; la tabla se abre y marca la fila 3 | — | `compacto`, `genesis-1--compacto-1-11-analisis-sin-js.png` |
 | UX-CA-05 VoiceOver / TalkBack | **PENDIENTE — no se ha cumplido** | **PENDIENTE** | — |
-| UX-CA-06 Niqud y marcas | Sin recortes en Chromium/Linux, incluido el pataḥ furtivo y el sin con punto. **Falta Safari iOS y Chrome Android.** | igual | banco de pruebas |
+| UX-CA-06 Niqud y marcas | Sin recortes en Chromium/Linux, incluido el pataḥ furtivo y el sin con punto. **Safari iOS (iPhone del propietario, 2026-10-13, modo oscuro):** niqud, dagesh, maqaf, sof pasuq y meteg se ven correctamente, y la tabla de análisis se abre desde las palabras; capturas aportadas en la sesión, no versionadas. **Falta Chrome Android.** | igual | banco de pruebas |
 | UX-CA-07 Procedencia sin color | Texto y forma del borde: continuo (importado), doble (derivado), discontinuo (borrador) | igual | capturas |
 | UX-CA-08 Peso, primera visita | ≈ 691 KB (HTML + CSS ≈ 41 KB; fuentes ≈ 650 KB) | ≈ 693 KB | `pesoPrimeraVisita` |
 | UX-CA-09 Sin JS | Cumple | Cumple | capturas |
