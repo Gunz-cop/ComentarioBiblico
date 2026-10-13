@@ -16,6 +16,7 @@
 | DEC-010 | Agent-native | Diseño para agentes desde el inicio | Intención aprobada; contratos pendientes | Propietario | `docs/arquitectura-y-referencias.md` |
 | DEC-011 | Stack MVP | Astro 7 estático, Node 24 LTS, TS 6 compatible, Zod, Tailwind 4 para UI + CSS nativo editorial, sin islas, Vitest/Playwright/axe, GitHub Actions, Cloudflare Workers Static Assets sin SSR ni BD | Aprobada | Propietario, 2026-10-13 | [ADR-001 / Issue #2](https://github.com/Gunz-cop/ComentarioBiblico/issues/2) |
 | DEC-012 | Persistencia SDI | Usar el SDI externo oficial, ejecutado tras deploy; estado persistente en rama dedicada, con serialización y controles de integridad; detalles operativos en SDD | Aprobada en principio; detalles pendientes | Propietario, 2026-10-13 | [ADR-001 / Issue #2](https://github.com/Gunz-cop/ComentarioBiblico/issues/2), [SDI](https://github.com/Gunz-cop/SDI) |
+| DEC-013 | Interlineal: maqaf | Cada palabra es la unidad de análisis morfológico; la unión por maqaf (`־`) se conserva visible en la lectura hebrea (p. ej. `עַל־הָאָרֶץ`). El contrato de datos distinguirá palabra analizable, token gráfico y segmentos morfológicos. No autoriza resegmentar ni modificar el corpus fuente; los detalles técnicos se especifican y validan aparte | Aprobada (regla conceptual); contrato de datos pendiente | Propietario, 2026-10-13 | [PR #12, comentario 6157488991](https://github.com/Gunz-cop/ComentarioBiblico/pull/12#issuecomment-6157488991), [Issue #8](https://github.com/Gunz-cop/ComentarioBiblico/issues/8) |
 
 ## Propuestas abiertas
 
