@@ -1,0 +1,84 @@
+[
+  {
+    "vista": "movil-320",
+    "esquema": "light",
+    "desbordeHorizontalPx": 0
+  },
+  {
+    "vista": "movil-360",
+    "esquema": "light",
+    "desbordeHorizontalPx": 0
+  },
+  {
+    "vista": "escritorio-1280",
+    "esquema": "light",
+    "desbordeHorizontalPx": 0
+  },
+  {
+    "vista": "movil-320",
+    "esquema": "dark",
+    "desbordeHorizontalPx": 0
+  },
+  {
+    "vista": "movil-360",
+    "esquema": "dark",
+    "desbordeHorizontalPx": 0
+  },
+  {
+    "vista": "escritorio-1280",
+    "esquema": "dark",
+    "desbordeHorizontalPx": 0
+  },
+  {
+    "vista": "movil-360-plegado-sin-js",
+    "bytesHTMLyCSS": 24402
+  },
+  {
+    "esquema": "light",
+    "fuentes": [
+      "Source Serif 4 normal 400: loaded",
+      "Source Serif 4 italic 400: loading",
+      "Source Serif 4 normal 600: loaded",
+      "Ezra SIL normal normal: loaded"
+    ],
+    "axeViolaciones": [],
+    "axeAprobadas": 27,
+    "objetivosMenoresDe24px": []
+  },
+  {
+    "esquema": "dark",
+    "fuentes": [
+      "Source Serif 4 normal 400: loaded",
+      "Source Serif 4 italic 400: unloaded",
+      "Source Serif 4 normal 600: loaded",
+      "Ezra SIL normal normal: loaded"
+    ],
+    "axeViolaciones": [],
+    "axeAprobadas": 27,
+    "objetivosMenoresDe24px": []
+  },
+  {
+    "tecladoOrdenFoco": [
+      "a: Saltar al contenido",
+      "a: Comentario Bíblico (nombre provisional, ",
+      "a: Inicio",
+      "a: Antiguo Testamento",
+      "a: Génesis",
+      "a: Capítulo 1",
+      "a: Versículo 1",
+      "summary: Hebreo e interlineal de 1:1",
+      "summary: Comentario de 1:1 Borrador ilustrativo",
+      "a: Versículo 2",
+      "a: Versículo 3",
+      "a: Versículo 4",
+      "a: Versículo 5",
+      "div: CasoMuestraMarcas Dagesh + qametsבָּרָאU",
+      "a: 1:1 Hebreo y comentario",
+      "a: 1:3 «Sea la luz»"
+    ],
+    "detailsAbiertoConEnter": true
+  },
+  {
+    "arbolAccesibleInterlineal": "- list \"Interlineal palabra por palabra, en el orden del texto hebreo\":\n  - listitem:\n    - term: Palabra\n    - definition: \"1\"\n    - term: Hebreo\n    - definition: בְּרֵאשִׁית\n    - term: Transliteración\n    - definition: bərēʾšît\n    - term: Glosa\n    - definition: en (el) principio\n    - group:\n      - text: Análisis de la palabra 1 Preposición + sustantivo femenino singular Editorial Lema רֵאשִׁית ·\n      - code: HR/Ncfsa\n      - text: Importado\n  - listitem:\n    - term: Palabra\n    - definition: \"2\"\n    - term: Hebreo\n    - definition: בָּרָא\n    - term: Transliteración\n    - definition: bārāʾ\n    - term: Glosa\n    - definition: creó\n    - group:\n      - text: Análisis de la palabra 2 Verbo Qal perfecto, 3.ª m. sg. Editorial Lema ברא ·\n      - code: HVqp3ms\n      - text: Importado\n  - listitem:\n    - term: Palabra\n    - definition: \"3\"\n    - term: Hebreo\n    - definition: אֱלֹהִים\n    - term: Transliteración\n    - definition: ʾĕlōhîm\n    - term: Glosa\n    - definition: Dios\n    - group:\n      - text: Análisis de la palabra 3 Sustantivo masculino plural Editorial Lema אֱלֹהִים ·\n      - code: HNcmpa\n      - text: Importado"
+  }
+]
